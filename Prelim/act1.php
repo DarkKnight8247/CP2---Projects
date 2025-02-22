@@ -8,7 +8,7 @@
         } else {
             return "The word is not a palindrome.";
         }
-    }
+    }locs
 
     // Function 2
     function calcLet($st1, $st2){
