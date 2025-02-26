@@ -18,12 +18,12 @@
 
 <?php
 
-    //function 1
+    //Function 1
     function formatName($name) {
         return "<strong>Name: </strong>" . ucwords(strtolower($name)) . "<br>";
     } 
 
-    //function 2
+    //Function 2
     function ageCat($age) {
         if ($age < 18 && $age > 0) {
             $cat = "Minor";
@@ -38,11 +38,12 @@
         return "<strong>Age:</strong> $age (Category: $cat) <br>";
     }
 
-    //function 3
+    //Function 3
     function revColor($c) {
         return "<strong>Favorite Color (Reversed): </strong>" . strrev($c) . "<br>";
     }
 
+    //Output Display
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $name = $_POST['name'];
         $age = $_POST['age'];
