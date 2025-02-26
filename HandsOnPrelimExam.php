@@ -17,6 +17,7 @@
 </html>
 
 <?php
+    if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $name = $_POST['name'];
     $age = $_POST['age'];
     $fc = $_POST['fc'];
@@ -50,4 +51,5 @@
     function revColor($c) {
         return "<strong>Favorite Color (Reversed): </strong>" . strrev($c) . "<br>";
     }
+}
 ?>
