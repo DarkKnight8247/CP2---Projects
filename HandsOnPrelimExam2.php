@@ -13,9 +13,6 @@
 
     for ($i = 0; $i < 4; $i++) {
         $ow[$i] = $_POST['w'][$i];
-    }
-
-    for ($i = 0; $i < 4; $i++) {
         $rw[$i] = strrev($ow[$i]);
     }
 
