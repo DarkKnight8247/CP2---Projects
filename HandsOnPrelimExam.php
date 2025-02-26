@@ -17,18 +17,6 @@
 </html>
 
 <?php
-    if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    $name = $_POST['name'];
-    $age = $_POST['age'];
-    $fc = $_POST['fc'];
-    $num = $_POST['n'];
-
-    echo "<h4>Processed Data:</h4>";
-    echo formatName($name);
-    echo ageCat($age);
-    echo revColor($fc);
-    echo "<strong>Entered Number:</strong> $num";
-
     function formatName($name) {
         return "<strong>Name: </strong>" . ucwords(strtolower($name)) . "<br>";
     } 
@@ -51,5 +39,17 @@
     function revColor($c) {
         return "<strong>Favorite Color (Reversed): </strong>" . strrev($c) . "<br>";
     }
+
+    if ($_SERVER['REQUEST_METHOD'] == "POST") {
+        $name = $_POST['name'];
+        $age = $_POST['age'];
+        $fc = $_POST['fc'];
+        $num = $_POST['n'];
+    
+        echo "<h4>Processed Data:</h4>";
+        echo formatName($name);
+        echo ageCat($age);
+        echo revColor($fc);
+        echo "<strong>Entered Number:</strong> $num";    
 }
 ?>
