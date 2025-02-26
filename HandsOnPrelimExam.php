@@ -32,7 +32,6 @@
             $age = "Please enter a valid age!";
             $cat = "NULL";
         }
-
         return "<strong>Age:</strong> $age (Category: $cat) <br>";
     }
 
