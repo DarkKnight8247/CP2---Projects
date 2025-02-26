@@ -17,10 +17,13 @@
 </html>
 
 <?php
+
+    //function 1
     function formatName($name) {
         return "<strong>Name: </strong>" . ucwords(strtolower($name)) . "<br>";
     } 
 
+    //function 2
     function ageCat($age) {
         if ($age < 18 && $age > 0) {
             $cat = "Minor";
@@ -35,6 +38,7 @@
         return "<strong>Age:</strong> $age (Category: $cat) <br>";
     }
 
+    //function 3
     function revColor($c) {
         return "<strong>Favorite Color (Reversed): </strong>" . strrev($c) . "<br>";
     }
