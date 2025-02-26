@@ -8,15 +8,20 @@
 
 <?php
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
-        $w = ["", "", "", ""];
+        $ow = ["", "", "", ""];
+        $rw = ["", "", "", ""];
 
     for ($i = 0; $i < 4; $i++) {
-        $w[$i] = $_POST['w'][$i];
+        $ow[$i] = $_POST['w'][$i];
+    }
+
+    for ($i = 0; $i < 4; $i++) {
+        $rw[$i] = strrev($ow[$i]);
     }
 
     echo "<h1>Original & Processed Workds:</h1>";
-    foreach ($w as $index => $word){
-        echo "Original: $word => Processed: " . strrev($word) . "<br>";
+    for ($i = 0; $i < 4; $i++) {
+        echo "Original: " . $ow[$i] . " => Processed: " . $rw[$i] . "<br>";
     }
     }
 ?>
