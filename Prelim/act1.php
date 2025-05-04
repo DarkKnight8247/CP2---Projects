@@ -4,7 +4,7 @@
         $w = strrev($word);
 
         if ($w == $word) {
-            return "The word is a palindrome.";
+            return "The word is a palindrome. ";
         } else {
             return "The word is not a palindrome.";
         }
