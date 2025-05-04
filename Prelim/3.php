@@ -1,6 +1,7 @@
 <?php
 $data = [
     ["Apple", "Banana", "Cherry"],
+    
     ["Dog", "Elephant", "Fox"],
     ["Guitar", "Hat", "Igloo"]
 ];

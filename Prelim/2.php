@@ -6,7 +6,7 @@
 
 <?php 
 function displayFruits($fruits) {
-    echo "<h3>Available Friuts:</h3><ul>";
+    echo "<h3>Available Friuts are:</h3><ul>";
     foreach ($fruits as $fruit) {
         echo "<li>$fruit</li>";
     }
